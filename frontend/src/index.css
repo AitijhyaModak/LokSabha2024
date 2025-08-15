@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@keyframes morph {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.bg-morph {
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(from 0deg,
+            hsla(30, 100%, 50%, 0.3),
+            hsla(0, 0%, 100%, 0.7),
+            hsla(147, 100%, 41%, 0.3),
+            hsla(30, 100%, 50%, 0.3));
+    filter: blur(120px);
+    animation: morph 13s linear infinite;
+}
+
+@layer components {
+    .glass {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+}
