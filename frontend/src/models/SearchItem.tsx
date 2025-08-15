@@ -1,5 +1,6 @@
 export interface SearchItem {
     type: "state" | "constituency" | "party" | "candidate";
+    itemDisplayName: string;
     itemData:
         | ConstituencySearchItem
         | CandidateSearchItem
@@ -9,19 +10,17 @@ export interface SearchItem {
 
 interface ConstituencySearchItem {
     constituencyId: number;
-    constituencyName: string;
 }
 
 interface CandidateSearchItem {
     candidateId: number;
-    candidateName: string;
 }
 
 interface StateSearchItem {
-    stateName: string;
+    steteId: number;
 }
 
 interface PoliticalPartySearchItem {
-    partyName: string;
+    partyId: string;
     partyColor: string;
 }

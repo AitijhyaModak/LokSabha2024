@@ -82,22 +82,22 @@ function IndiaMap() {
                         style={(feature) => ({
                             color:
                                 hoveredConstituency?.constituencyId ===
-                                feature?.properties.constituencyId
+                                    feature?.properties.constituencyId
                                     ? "#000"
                                     : "#555",
                             weight:
                                 hoveredConstituency?.constituencyId ===
-                                feature?.properties.constituencyId
+                                    feature?.properties.constituencyId
                                     ? 2
                                     : 1,
                             fillOpacity:
                                 hoveredConstituency?.constituencyId ===
-                                feature?.properties.constituencyId
+                                    feature?.properties.constituencyId
                                     ? 1
                                     : 0.9,
                             fillColor:
                                 hoveredConstituency?.constituencyId ===
-                                feature?.properties.constituencyId
+                                    feature?.properties.constituencyId
                                     ? "black"
                                     : feature?.properties.winnerPartyColor,
                         })}
