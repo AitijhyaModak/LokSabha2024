@@ -1,6 +1,4 @@
 import { create } from "zustand";
-import type { SearchItem } from "../models/SearchItem";
-
 interface AppState {
     isSearching: boolean;
     enterSearch: () => void;

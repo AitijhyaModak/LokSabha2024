@@ -3,7 +3,6 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import { AiOutlineHeatMap } from "react-icons/ai";
 import { FaSearch } from "react-icons/fa";
-import { useState } from "react";
 import { useAppStore } from "../../hooks/useStore";
 
 function Navbar() {

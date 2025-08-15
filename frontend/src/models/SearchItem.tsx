@@ -2,10 +2,10 @@ export interface SearchItem {
     type: "state" | "constituency" | "party" | "candidate";
     itemDisplayName: string;
     itemData:
-        | ConstituencySearchItem
-        | CandidateSearchItem
-        | StateSearchItem
-        | PoliticalPartySearchItem;
+    | ConstituencySearchItem
+    | CandidateSearchItem
+    | StateSearchItem
+    | PoliticalPartySearchItem;
 }
 
 interface ConstituencySearchItem {
