@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@keyframes morph {
+  0%   { transform: scale(1) rotate(0deg); }
+  50%  { transform: scale(1.2) rotate(180deg); }
+  100% { transform: scale(1) rotate(360deg); }
+}
+
+.bg-morph {
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+    from 0deg,
+    hsla(30, 100%, 50%, 0.3),
+    hsla(0, 0%, 100%, 0.7),
+    hsla(147, 100%, 41%, 0.3),
+    hsla(30, 100%, 50%, 0.3)
+  );
+  filter: blur(120px);
+  animation: morph 13s linear infinite;
+}
+
+
